@@ -1,0 +1,33 @@
+<!--pages/players/player-detail/player-detail.wxml-->
+<swiper vertical="false" circular="true" style="height:{{height}}rpx;">
+  <block wx:key="index" wx:for='{{list}}' wx:for-item='item'>
+  <swiper-item>
+    <view style="width:100%;height:100%;position:fixed;">
+      <!-- 背景图片 -->
+      <image src="{{item.image}}" style="height:{{height}}rpx;"/>
+      <!-- 左上角头像模块 -->
+      <view class="sheader">
+        <image src="../../../images/vr.png" style="width:72rpx;height:72rpx;border-radius:36rpx;"></image>
+        <view style="margin:5rpx;display:flex;flex-direction:column;">
+          <text class="userName">1111121112...22222</text>
+          <text class="userName">3332人</text>
+        </view>
+      </view>
+
+      <!-- 底部控件 -->
+      <view class="sbottom">
+        <text class="liao">撩Ta一下...</text>
+        <image class="gift" src="../../../images/icon/collection.png"></image>
+        <image class="gift" src="../../../images/icon/share.png"></image>
+        <text class="sbCollection">关注</text>
+      </view>
+      <view class="chatContainer">
+        <block wx:key="index" wx:for="{{chatList}}" wx:for-item="item">
+          <text class="chatItem">{{item.content}}</text>
+        </block>
+      </view>
+      <image class="randomSee" src="../../../images/icon/share.png"></image>
+    </view>
+  </swiper-item>
+  </block>
+</swiper>

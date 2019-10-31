@@ -1,0 +1,16 @@
+<!--pages/hot/hot.wxml-->
+<view class="container">
+<label><text>{{hello}}</text> </label>
+  <view class="view {{showModel == 1 ? '' : 'small'}}" wx:for="{{list}}" wx:for-item="item" wx:key="index">
+  <image class="image" src="../../images/empty.jpeg"></image>
+  <text class="loc">hello</text>
+  <text class="loc" style="bottom:24rpx;">world</text>
+  <text class="online" style="bottom:24rpx;">3210人</text>
+</view>
+<cover-view style="position:fixed;top:222rpx;left:50rpx;">
+  <cover-image src="../../images/avatar/1.png" style="height:122rpx;width:122rpx;" animation="{{anim}}" bindtap="onClick"></cover-image>
+</cover-view>
+<cover-view style="position:absolute;top:222rpx;left:222rpx;">
+  <cover-image src="../../images/avatar/1.png" style="height:222rpx;width:222rpx;" animation="{{anim}}" bindtap="onClick"></cover-image>
+</cover-view>
+</view>

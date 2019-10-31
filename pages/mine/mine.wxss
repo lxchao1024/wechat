@@ -1,0 +1,53 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  box-sizing: border-box;
+  margin-bottom: 48px;
+} 
+
+.mine-title {
+  padding: 20rpx;
+  width: 100%;
+  flex-direction: row;
+  flex: 1;
+}
+
+.mine-left {
+  width: 580rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.mine-name {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.mine-level {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-left:15rpx;
+  border: orangered;
+  border-color: purple;
+  background: purple;
+  border-radius: 5rpx;
+  height: 30rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.mine-header {
+  width: 150rpx;
+  height: 150rpx;
+  float: right;
+  margin-right: 20rpx;
+  border-radius: 75rpx;
+}

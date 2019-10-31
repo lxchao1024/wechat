@@ -1,0 +1,66 @@
+<!--pages/mine/mine.wxml-->
+<scroll-view>
+  <view class="mine-title">
+    <image class="mine-header" catchtap="onClick" data-cid="header" src="{{userHeader}}"></image>
+    <view class="mine-left">
+      <text class="mine-name">呱呱呱</text>
+      <view style="display:flex;flex-direction:row;align-items:center;margin-bottom:10rpx;">
+        <image style="width:20rpx;height:20rpx;" src="../../images/avatar/1.png"></image>
+        <view class="mine-level">
+          <image style="width:20rpx;height:20rpx;" src="../../images/avatar/2.png"></image>
+          <text style="color:white;font-size:14px;margin-left:5rpx;">1</text>
+        </view>
+      </view>
+      <text style="font-size:12px;margin-bottom:10rpx;">id:500003238</text>
+      <text style="font-size:12px;color:gray;">nothing</text>
+    </view>
+  </view>
+  <view style="display:flex;flex-direction:row;margin-top:15rpx;">
+    <view catchtap="onClick" data-cid="attention" style="width:50%;display:flex;flex-direction:column;align-items:center;">
+      <text catchtap="onClick" data-cid="attention">9</text>
+      <text catchtap="onClick" data-cid="attention">关注</text>
+    </view>
+    <view catchtap="onClick" data-cid="fans" style="width:50%;display:flex;flex-direction:column;align-items:center;">
+      <text catchtap="onClick" data-cid="fans">9</text>
+      <text catchtap="onClick" data-cid="fans">粉丝</text>
+    </view>
+  </view>
+  <view style="width:100%;height:1rpx;background:#f9f9f9;margin-top:20rpx;"></view>
+  <!-- 贡献榜 -->
+  <view catchtap="onClick" data-cid="contribution" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">贡献榜</text>
+    <image catchtap="onClick" data-cid="contribution" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 我的钱包 -->
+  <view catchtap="onClick" data-cid="wallet" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">我的钱包</text>
+    <image catchtap="onClick" data-cid="wallet" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 我的等级 -->
+  <view catchtap="onClick" data-cid="level" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">我的等级</text>
+    <image catchtap="onClick" data-cid="level" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 我的直播 -->
+  <view catchtap="onClick" data-cid="play" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">我的直播</text>
+    <image catchtap="onClick" data-cid="play" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 游戏战绩 -->
+  <view catchtap="onClick" data-cid="game" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">游戏战绩</text>
+    <image catchtap="onClick" data-cid="game" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 我的夺宝 -->
+  <view catchtap="onClick" data-cid="snatch" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">我的夺宝</text>
+    <text style="width:40rpx;height:20rpx;font-size:10px;color:white;background:orangered;border-radius:5rpx;padding-left:5rpx;padding-right:5rpx;">new</text>
+    <image catchtap="onClick" data-cid="snatch" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+  <!-- 设置 -->
+  <view catchtap="onClick" data-cid="settings" style="padding:20rpx;">
+    <text style="font-size:14px;color:black;">设置</text>
+    <image catchtap="onClick" data-cid="settings" src="../../images/right.png" style="width:24rpx;height:24rpx;float:right;"></image>
+  </view>
+
+</scroll-view>  

@@ -1,0 +1,23 @@
+/* pages/detail/detail.wxss */
+.dview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15rpx;
+}
+
+.dview view {
+  width: 360rpx;
+  height: 360rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.dview image {
+  width: 330rpx;
+  height: 330rpx;
+  border: 2px solid gray;
+  border-radius: 10px;
+}

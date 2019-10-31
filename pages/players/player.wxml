@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<view class="dview">
+<block wx:for="{{list}}" wx:key="index" wx:for-item="item">
+  <view catchtap="onClick" data-cid="{{index}}">
+    <image src="{{item.image}}" style="width:300rpx;height:300rpx;"></image>
+  </view>
+</block>
+</view>

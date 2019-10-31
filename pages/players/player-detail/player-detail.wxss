@@ -1,0 +1,122 @@
+/* pages/players/player-detail/player-detail.wxss */
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.sheader {
+  height: 72rpx;
+  width: 230rpx;
+  border-radius: 36rpx;
+  position: fixed;
+  top: 15rpx;
+  left: 15rpx;
+  flex-direction: row;
+  display: flex;
+  background: #000;
+}
+
+.userName {
+  color: white;
+  font-size: 22rpx;
+  overflow: hidden;
+  width: 134rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 5rpx;
+}
+
+.sbottom {
+  height: 88rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  flex-direction: row;
+  display: flex;
+  background: black;
+  justify-items: center;
+}
+
+.sbCollection {
+  width: 140rpx;
+  height: 40rpx;
+  text-align: center;
+  font-size: 12px;
+  background: #10dcd3;
+  border-radius: 40rpx;
+  color: white;
+  padding-top: 8rpx;
+  font-weight: bold;
+  position: fixed;
+  right: 15rpx;
+  margin-top: 20rpx;
+}
+
+.liao {
+  background: white;
+  width: 140rpx;
+  height: 40rpx;
+  background: gray;
+  border: 2px solid white;
+  border-radius: 40rpx;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 8rpx;
+  color: white;
+  margin-left: 20rpx;
+  margin-top: 18rpx;
+}
+
+.gift {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  margin-top: 18rpx;
+}
+
+.chatContainer {
+  height: 350rpx;
+  width: 600rpx;
+  position: fixed;
+  bottom: 88rpx;
+  left: 0;
+  flex-direction: column;
+  display: flex;
+  background: transparent;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.chat {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.randomSee {
+  height: 75rpx;
+  width: 75rpx;
+  position: fixed;
+  bottom: 350rpx;
+  right: 0;
+  flex-direction: column;
+  display: flex;
+  margin-right: 30rpx;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.chatItem {
+  width: 580rpx;
+  height: auto;
+  padding: 10rpx;
+  border: 1px solid chocolate;
+  border-radius: 10rpx;
+  background: purple;
+  margin-top: 10rpx;
+  color: white;
+  font-size: 12px;
+}

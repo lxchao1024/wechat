@@ -1,0 +1,21 @@
+<import src="../template/wrap-item/wrap-item.wxml" />
+
+<view class="post-item">
+<swiper autoplay="true" vertical="{{false}}" interval="3000" indicator-dots="true" indicator-active-color="white" indicator-color="gray" circular="true">
+  <swiper-item>
+    <image src="../../images/empty.jpeg" />
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/empty3.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/empty2.jpeg" />
+  </swiper-item>
+</swiper>
+
+<block wx:for="{{list}}" wx:key="index" wx:for-item="item">
+  <view catchtap="onClick" data-cid="{{index}}">
+    <template is="wrapItem" data="{{...item}}" />
+  </view>
+</block>
+</view>

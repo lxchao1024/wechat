@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/players/player",
+    "pages/logs/logs",
+    "pages/posts/post",
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/hot/hot",
+    "pages/players/player-detail/player-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "Hello，小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/posts/post",
+        "text": "",
+        "iconPath": "images/avatar/1.png",
+        "selectedIconPath": "images/avatar/2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "",
+        "iconPath": "images/avatar/3.png",
+        "selectedIconPath": "images/avatar/4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

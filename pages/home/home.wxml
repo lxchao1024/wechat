@@ -1,0 +1,12 @@
+<import src="../template/loading/loading-header.wxml" />
+<import src="../template/loading/loading-footer.wxml" />
+<view class="hview">
+  <template is="loadingHeader" data="{{...a, isRefreshing}}"/>
+  <block wx:key="index" wx:for="{{list}}" wx:for-item="data">
+    <view class="content">
+      <text>{{index + 1}} . {{data.content}}</text>
+      <text style="margin-top:15rpx;">{{data.updatetime}}</text>
+    </view>  
+    </block>
+  <template is="loadingFooter" data="{{...a, isRefreshing, isLoadingMoreData, hasMoreData}}"/>
+</view>

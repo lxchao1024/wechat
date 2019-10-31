@@ -1,0 +1,65 @@
+/* pages/hot/hot.wxss */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0rpx 15rpx;
+}
+.view {
+  position: relative;
+  width: 720rpx;
+  height: 720rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+  padding: 4rpx 5rpx;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  float: left;
+  filter: blur(8px)
+}
+
+.loc {
+  position: absolute;
+  left: 28rpx;
+  bottom: 60rpx;
+  color: white;
+  overflow: hidden;
+  line-height: 42rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60%;
+  font-size: 24rpx;
+}
+
+.online {
+  position: absolute;
+  right: 28rpx;
+  bottom: 15rpx;
+  color: white;
+  overflow: hidden;
+  line-height: 42rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 40%;
+  text-align: right;
+  font-size: 24rpx;
+}
+
+.small {
+  width: 355rpx;
+  height: 355rpx;
+  float: left;
+  padding: 5rpx 0rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
