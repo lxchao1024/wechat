@@ -33,7 +33,7 @@ function request(url, params, method, onStart, onSuccess, onFailed) {
       if (res.data) {
         /** start 根据需求 接口的返回状态码进行处理 */
         console.log("data == " + res)
-        if (res.data.error_code == 0) {
+        if (res.data.errno == 0 || res.data.error_code == 0) {
           onSuccess(res.data); //request success
         } else {
           onFailed(res.data.msg); //request failed
