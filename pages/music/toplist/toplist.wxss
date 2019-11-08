@@ -1,0 +1,23 @@
+/* pages/music/music-list/toplist.wxss */
+@import '../music.wxss';
+
+.itemContent {
+  width: 750rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center-vertical;
+  border-bottom: 2rpx solid lightgray;
+  padding-left: 25rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mimg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}

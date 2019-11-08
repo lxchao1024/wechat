@@ -7,7 +7,12 @@
     "pages/mine/mine",
     "pages/home/home",
     "pages/hot/hot",
-    "pages/players/player-detail/player-detail"
+    "pages/players/player-detail/player-detail",
+    "pages/game1/game1",
+    "pages/game/game",
+    "pages/music/music",
+    "pages/music/toplist/toplist",
+    "pages/music/music-detail/player"
   ],
   "window": {
     "backgroundTextStyle": "light",

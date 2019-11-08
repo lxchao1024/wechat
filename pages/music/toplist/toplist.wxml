@@ -1,0 +1,11 @@
+<view class="music-container">
+  <!-- <image src="/images/background.png" class="mimg"></image> -->
+  <swiper autoplay="true" vertical="{{false}}" interval="3000" circular="true">
+    <swiper-item>
+      <image src="{{picAlbum}}" binderror="errorFunction" />
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{songlist}}" wx:key="index">
+    <text bindtap="onItemClick" data-id="{{item.albumMid}}" data-sid="{{item.singer[0].singerMid}}" class="itemContent">{{index + 1}} . {{item.songName}}</text>
+  </block>
+</view>

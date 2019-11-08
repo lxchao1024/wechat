@@ -35,15 +35,27 @@ Page({
         break
       case 'play':
         title = '我的直播'
+        wx.navigateTo({
+          url: '/pages/zp/zp',
+        })
         break
       case 'game':
         title = '游戏战绩'
+        wx.navigateTo({
+          url: '/pages/game/game',
+        })
         break
       case 'snatch':
         title = '我的夺宝'
+        wx.navigateTo({
+          url: '/pages/music/music',
+        })
         break
       case 'settings':
         title = '设置'
+        wx.navigateTo({
+          url: '/pages/game1/game1',
+        })
         break
       case 'header':
         title = '头像'

@@ -1,0 +1,60 @@
+@import '../template/loading/loading.wxss';
+
+.music-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+swiper {
+  width: 100%;
+  height: 320rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 320rpx;
+}
+
+.music-tip-text {
+  font-size: 38rpx;
+  margin: 20rpx;
+  color: black;
+  font-weight: bold;
+}
+
+.music-row-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.music-top-image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.music-top-songs {
+  width: 500rpx;
+  height: 150rpx;
+  align-item: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25rpx;
+}
+
+.music-top-text {
+  font-size: 24rpx;
+  margin-top: 12rpx;
+  font-weight: bold;
+  color: black;
+  overflow: hidden;
+  max-lines: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

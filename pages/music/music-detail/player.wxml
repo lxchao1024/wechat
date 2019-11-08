@@ -1,0 +1,5 @@
+<!--pages/music/music-detail/player.wxml-->
+<view class="mview">
+  <image src="/images/avatar/1.png" class="image-rotate"></image>
+  <image src="/images/background.png" class="bgImage"></image>
+</view>

@@ -1,0 +1,71 @@
+/* pages/game/game.wxss */
+
+page {
+  background: #fe8cad;
+}
+
+#luckdraw_box {
+  width: 531rpx;
+  height: 531rpx;
+  margin: 100rpx auto;
+  position: relative;
+}
+
+#luckdraw_back {
+  width: 100%;
+  height: 100%;
+}
+
+#luckdraw_back image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+}
+
+#luckdraw_pointer {
+  width: 174rpx;
+  height: 228rpx;
+  position: absolute;
+  left: 178.5rpx;
+  z-index: 999;
+  top: 132.5rpx;
+}
+
+#luckdraw_pointer image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container-game {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.time {
+  color: #3B374D;
+  background: #FEFEFE;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  height: 50rpx;
+  width: 72rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+
+.time1 {
+  color: white;
+  background: #6154FC;
+  border-radius: 50rpx;
+  height: 70rpx;
+  width: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 22rpx;
+  margin-left: -10rpx;
+}

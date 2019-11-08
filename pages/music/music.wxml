@@ -1,0 +1,30 @@
+<import src="../template/loading/loading-header.wxml" />
+<import src="../template/loading/loading-footer.wxml" />
+<view class="music-container">
+  <template is="loadingHeader" data="{{...a, isRefreshing}}" />
+  <swiper autoplay="true" vertical="{{false}}" interval="3000" indicator-dots="true" indicator-active-color="white" indicator-color="gray" circular="true">
+    <block wx:for="{{slider}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <text class="music-tip-text">推荐</text>
+  <view class="music-row-container">
+    <block wx:for="{{radioList}}" wx:key="index">
+      <image style="width:360rpx;height:360rpx;border-radius:15rpx;margin-left:{{index != 0 ? 10 : 0}}rpx;" src="{{item.picUrl}}"></image>
+    </block>
+  </view>
+  <text class="music-tip-text">榜单</text>
+    <block wx:for="{{toplist}}" wx:key="index" wx:for-item="item">
+      <view class="music-row-container" style="border-bottom: 2rpx solid lightgray;margin-bottom:10rpx;" bindtap="onItemClick" data-id="{{item.id}}" data-title="{{item.title}}">
+        <image class="music-top-image" src="{{item.picUrl}}"></image>
+        <view class="music-top-songs">
+          <block wx:for="{{item.songList}}" wx:key="ind" wx:for-item="itemData">
+            <text class="music-top-text">{{itemData.number}}.{{itemData.songName}}-{{itemData.singerName}}</text>
+          </block>  
+        </view>
+      </view>
+    </block>
+  <template is="loadingFooter" data="{{...a, isRefreshing, isLoadingMoreData, hasMoreData}}" />
+</view>

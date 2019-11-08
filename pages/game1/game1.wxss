@@ -1,0 +1,63 @@
+/* pages/game/game1.wxss */
+page {
+  background: #FE8CAD;
+}
+
+.wheel_container {
+  position: absolute;
+  top: calc((100% - 880rpx)/2);
+  width: calc(100% - 60rpx);
+  border-radius: 16rpx;
+  text-align: center;
+  overflow: hidden;
+  background: lightgray;
+  left: 30rpx;
+  height: calc(100% - (100% - 880rpx));
+}
+
+.close {
+  width: 24rpx;
+  height: 24rpx;
+  padding: 24rpx 24rpx 12rpx 24rpx;
+  float: right;
+}
+
+.wheel_wp {
+  width: calc(100% - 120rpx);
+  padding: 0 60rpx 60rpx 60rpx;
+  height: 100%;
+}
+
+.wheel_wp image {
+  width: 100%;
+  height: 100%;
+}
+
+.wheel_pointer {
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  top: 344rpx;
+  left: 50%;
+  margin: -75rpx 0 0 -75rpx;
+  transform-origin: 50% 50% 0;
+}
+
+.wheel_pointer image {
+  position: absolute;
+  width: 149rpx;
+  height: 192rpx;
+  left: 0;
+  top: -40rpx;
+}
+
+button {
+  margin-top: 30rpx;
+}
+
+.swiper-text {
+  width: 100%;
+  height: 80rpx;
+  color: white;
+  line-height: 80rpx;
+}

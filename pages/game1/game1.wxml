@@ -1,0 +1,30 @@
+<!--pages/game/game1.wxml-->
+<view>
+  <view class="wheel_container">
+    <image bindtap="close" class="close" src="https://o3pvuu23u.qnssl.com/48524237-601b-4611-b96d-01d99abd1ef2.png" />
+    <view class="wheel_wp">
+
+      <image mode="widthFix" src="/images/wheel.png" />
+
+      <view class="wheel_pointer {{btnDisabled}}" catchtap="startAnim">
+        <image style=' transform:rotate({{change_angle}}deg)' mode="widthFix" src="/images/pointer.png" />
+      </view>
+
+      <button size="mini" type="primary" bindtap="startAnim">中奖纪录</button>
+
+
+      <view style="background:gray;height:80rpx;border-radius:15rpx;margin-top:20rpx;">
+        <swiper class="tab-right" vertical="true" autoplay="true" circular="true" interval="2000" display-multiple-items='1'>
+
+          <block wx:for="{{Jack_pots}}" wx:key="index">
+            <swiper-item>
+              <view class='content-item'>
+                <view class="swiper-text">恭喜 Mr.Li{{index+1}} 获得了 {{item.val}}</view>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>
