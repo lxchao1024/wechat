@@ -1,7 +1,7 @@
 <!--pages/mine/mine.wxml-->
 <scroll-view>
   <view class="mine-title">
-    <image class="mine-header" catchtap="onClick" data-cid="header" src="{{userHeader}}"></image>
+    <image class="mine-header" catchtap="onClick" data-cid="header" src="{{userHeader}}" animation="{{anim}}"></image>
     <view class="mine-left">
       <text class="mine-name">呱呱呱</text>
       <view style="display:flex;flex-direction:row;align-items:center;margin-bottom:10rpx;">

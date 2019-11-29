@@ -1,0 +1,15 @@
+<swiper vertical="{{false}}" current="{{current}}" style="width:750rpx;height:{{height}}rpx;">
+  <block wx:for="{{danxuan}}" wx:key="index">
+    <swiper-item>
+      <view>
+        <text>标题. {{item.title}}</text>
+        <text style="font-size:40rpx;color:black;margin-top:30rpx;"><br/>{{item.content}}</text>
+        <text style="font-size:40rpx;color:black;margin-top:30rpx;"><br/>A. {{item.A}}</text>
+        <text style="font-size:40rpx;color:black;margin-top:10rpx;"><br/>B. {{item.B}}</text>
+        <text style="font-size:40rpx;color:black;margin-top:10rpx;"><br/>C. {{item.C}}</text>
+        <text style="font-size:40rpx;color:black;margin-top:10rpx;"><br/>D. {{item.D}}</text>
+        <text style="font-size:50rpx;color:red;margin-top:30rpx;">正确答案：{{item.ans}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

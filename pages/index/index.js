@@ -7,7 +7,10 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+    anim:'',
+    degree: 3600
   },
   //事件处理函数
   bindViewTap: function() {
@@ -55,6 +58,14 @@ Page({
   onTap:function(event) {
     wx.switchTab({
       url: '../posts/post',
+    })
+  },
+
+  onReady: function() {
+    var animation = wx.createAnimation({
+      delay:0,
+      duration:2500,
+      timingFunction: 'ease'
     })
   }
 })

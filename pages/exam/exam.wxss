@@ -1,0 +1,10 @@
+/* pages/exam/exam.wxss */
+button {
+  margin: 40rpx;
+}
+
+view {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

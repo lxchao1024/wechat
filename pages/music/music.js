@@ -50,7 +50,7 @@ Page({
     wx.request({
       url: recommend,
       success: function(res) {
-        console.log(res.data.data)
+        console.log(res.data)
       }
     })
   },

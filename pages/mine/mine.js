@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    degree: 1800,
+    anim:{}
   },
 
   /**
@@ -15,6 +16,26 @@ Page({
     this.setData({
       userHeader: '../../images/avatar/1.png'
     })
+  },
+
+  onReady: function() {
+    var anima = wx.createAnimation({
+      duration: 1800,
+      delay: 0,
+      timingFunction: 'ease'
+    })
+
+    anima.rotate(this.data.degree).step()
+    this.setData({
+      anim: anima.export()
+    })
+
+    setTimeout(function() {
+      wx.showToast({
+        title: '动画结束了',
+        icon: 'none'
+      })
+    }, 1800)
   },
 
   onClick: function (e) {

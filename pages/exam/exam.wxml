@@ -1,0 +1,6 @@
+<!--pages/exam/exam.wxml-->
+<view>
+  <!-- <button size="default" type="primary" bindtap="onOpinionClick">判断</button>
+  <button size="default" type="warn" bindtap="onSingleClick">单选</button> -->
+  {{degree}}
+</view>

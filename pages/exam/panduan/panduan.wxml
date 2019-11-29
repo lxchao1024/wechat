@@ -1,0 +1,13 @@
+<swiper vertical="{{false}}" current="{{current}}" style="width:750rpx;height:{{height}}rpx;">
+  <block wx:for="{{panduan}}" wx:key="index">
+    <swiper-item>
+      <view>
+        <text>标题. {{item.title}}</text>
+        <text style="font-size:34rpx;color:black;margin-top:30rpx;"><br/>{{item.content}}</text>
+        <text style="margin-top:25rpx;" data-index="{{index}}" bindtap="right">正确</text>
+        <text style="margin-top:15rpx;" data-index="{{index}}" bindtap="error">错误</text>
+        <text hidden="{{!isRight}}" style="font-size:50rpx;color:red;margin-top:30rpx;">正确答案： {{item.ans}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

@@ -14,7 +14,7 @@
         
 				<view class="canvas-list">
 					<view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
-				  		<view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+				  		<view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})"><image src="/images/avatar/1.png" style="width:80rpx;height:80rpx;"></image></view>
 					</view>
 				</view>
 			</view>

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/exam/exam",
     "pages/players/player",
     "pages/logs/logs",
     "pages/posts/post",
@@ -12,7 +13,10 @@
     "pages/game/game",
     "pages/music/music",
     "pages/music/toplist/toplist",
-    "pages/music/music-detail/player"
+    "pages/music/music-detail/player",
+    "pages/exam/danxuan/danxuan",
+    "pages/exam/panduan/panduan",
+    "pages/empty/empty"
   ],
   "window": {
     "backgroundTextStyle": "light",
