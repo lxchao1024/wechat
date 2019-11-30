@@ -3,6 +3,7 @@ page {
 }
 
 /* 转盘 */
+
 .canvas-container {
   margin: 0 auto;
   position: relative;
@@ -11,6 +12,7 @@ page {
   border-radius: 50%;
   box-shadow: 0 2px 3px #333, 0 0 2px #000;
 }
+
 .canvas-content {
   position: absolute;
   left: 0;
@@ -23,6 +25,7 @@ page {
   background-clip: padding-box;
   background-color: #ffcb3f;
 }
+
 .canvas-element {
   position: relative;
   z-index: 1;
@@ -30,6 +33,7 @@ page {
   height: inherit;
   border-radius: 50%;
 }
+
 .canvas-list {
   position: absolute;
   left: 0;
@@ -38,6 +42,7 @@ page {
   height: inherit;
   z-index: 9999;
 }
+
 .canvas-item {
   position: absolute;
   left: 0;
@@ -48,6 +53,7 @@ page {
   font-weight: bold;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
 }
+
 .canvas-item-text {
   position: relative;
   display: block;
@@ -56,9 +62,11 @@ page {
   text-align: center;
   -webkit-transform-origin: 50% 150px;
   transform-origin: 50% 150px;
+  flex-direction: column;
 }
 
 /* 分隔线 */
+
 .canvas-line {
   position: absolute;
   left: 0;
@@ -67,6 +75,7 @@ page {
   height: inherit;
   z-index: 99;
 }
+
 .canvas-litem {
   position: absolute;
   left: 150px;
@@ -82,6 +91,7 @@ page {
 /**
 * 抽奖按钮
 */
+
 .canvas-btn {
   position: absolute;
   left: 110px;
@@ -99,6 +109,7 @@ page {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
+
 .canvas-btn::after {
   position: absolute;
   display: block;
@@ -113,11 +124,20 @@ page {
   border-color: transparent;
   border-bottom-color: #e44025;
 }
+
 .canvas-btn.disabled {
   pointer-events: none;
   background: #b07a7b;
   color: #ccc;
 }
+
 .canvas-btn.disabled::after {
   border-bottom-color: #b07a7b;
+}
+
+.vtext {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: bt-rl;
+  writing-mode: vertical-rl;
+  text-align: center;
 }

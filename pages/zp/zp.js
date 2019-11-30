@@ -82,7 +82,10 @@ Page({
         content: '获得' + (awardsConfig.awards[awardIndex].name),
         showCancel: false
       });
+
+      animationRun.rotate(0).step();
       this.setData({
+        animationData: animationRun.export(),
         btnDisabled: ''
       });
     }.bind(this), duration);
